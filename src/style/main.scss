@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Open+Sans:wght@300;500;600;700&display=swap');
+
+$bodyBgColor: #080809;
+
+$fontColor: #eef6fd;
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: $bodyBgColor;
+    color: $fontColor;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3pt;
+}
+
+.page-wrapper {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.page-content {
+}
+
+.page-header {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.navbar {
+    width: 100%;
+    height: 35px;
+    text-transform: uppercase;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0 3px;
+    margin: 0;
+}
+
+nav > ul > li {
+    float: left;
+    margin-right: 15px;
+}
+
+button.nav-btn {
+    font-size: 10pt;
+    font-weight: 600;
+    transition: color 0.15s, border 0.15s;
+    cursor: pointer;
+    user-select: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    border: solid 2px transparent;
+    color: $fontColor;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button.nav-btn:hover {
+    // color: #e4e4e4;
+    //border: solid 2px #1a1a1b;
+    // border: solid 2px lighten($bodyBgColor, 2%);
+    color: #2d2e3c;
+}
+
+h1.banner {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    left: 15px;
+    color: #000;
+    text-shadow: 3px 2px 0 #fff;
+}
+
+h1.banner:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -15px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    box-shadow: 4px 3px 0 #000;
+    transform: skewX(-10deg);
+}
